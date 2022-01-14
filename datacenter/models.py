@@ -39,3 +39,6 @@ class Visit(models.Model):
     def format_duration(duration):
         hour, min, sec = str(duration).split(":")
         return f"{hour} ч. {min} мин."
+
+    def is_visit_long(self, minutes) -> bool:
+        return self.get_duration() > timedelta(minutes=minutes)
