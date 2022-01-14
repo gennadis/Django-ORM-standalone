@@ -35,6 +35,7 @@ class Visit(models.Model):
             return self.leaved_at - self.entered_at
         return timezone.now() - self.entered_at
 
+    @staticmethod
     def format_duration(duration):
         hour, min, sec = str(duration).split(":")
         return f"{hour} ч. {min} мин."
