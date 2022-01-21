@@ -13,19 +13,19 @@ cd bank-vault-security
 
 2. Create virtual environment
 ```bash
-python3 -m venv env
-source env/bin/activate
+python3 -m venv venv
+source venv/bin/activate
 ```
 
 3. Install requirements
 ```bash
 pip install -r requirements.txt
 ```
-4. Enter Database credentials in `project/settings.py`
+4. Rename `.env.example` to `.env` and fill your secrets in it
 
 5. Run
 ```bash
-python main.py
+python manage.py runserver 0.0.0.0:8000
 ```
 
 6. Open
