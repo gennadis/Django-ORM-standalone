@@ -25,8 +25,8 @@ pip install -r requirements.txt
 
 5. Run
 ```bash
-python manage.py runserver 0.0.0.0:8000
+python manage.py runserver
 ```
 
 6. Open
-Open site in browser [http://0.0.0.0:8000/](http://0.0.0.0:8000/)
+Open site in browser [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
